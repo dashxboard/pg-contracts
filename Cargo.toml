@@ -1,0 +1,30 @@
+[workspace]
+resolver = "2"
+members = ["token-gated-vote-contract"]
+
+[workspace.package]
+version = "0.1.0"
+authors = ["Dashxboard <contact@dashxboard.com>"]
+description = "A comprehensive suite of Soroban smart contracts implementing various governance and voting mechanisms in Play Governance, an integral module of the Dashxboard micro-ecosystem within the Stronghold (SHx) ecosystem."
+license = "MIT"
+repository = "https://github.com/dashxboard/pg-contracts"
+homepage = "https://playground.dashxboard.com"
+edition = "2021"
+rust-version = "1.88"
+
+[workspace.dependencies]
+soroban-sdk = { version = "22.0.8" }
+
+[profile.release]
+opt-level = "z"
+overflow-checks = true
+debug = 0
+strip = "symbols"
+debug-assertions = false
+panic = "abort"
+codegen-units = 1
+lto = true
+
+[profile.release-with-logs]
+inherits = "release"
+debug-assertions = true

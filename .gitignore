@@ -1,0 +1,8 @@
+# Rust build output
+target/
+
+# Tests output
+test_snapshots/
+
+# Stellar
+.stellar
