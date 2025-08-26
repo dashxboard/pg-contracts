@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discussions
+    url: https://github.com/orgs/dashxboard/discussions
+    about: Community discussions around the Dashxboard, Stronghold (SHx) related projects, support, and announcements. A space to share, ask, and connect.
+  - name: Documentation
+    url: https://github.com/dashxboard/pg-contracts/blob/main/README.md
+    about: Comprehensive documentation for the pg-contracts repository.
+  - name: Stronghold Discord Community
+    url: https://discord.gg/A3RUxuHTzV
+    about: Join the Stronghold community for broader ecosystem discussions.
